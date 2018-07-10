@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h4>Make a new POLL:</h4>
+    <div class="container">
+        <div class="row">
+          <label class="col-3" for="exampleInputEmail1">TITLE:</label>
+          <input class="col-9" type="text" [(ngModel)]="pollName">
+        </div>
+        <div class="row my-2">
+          <label class="col-12" for="exampleInputPassword1">OPTIONS(Separated by Lines):</label>
+          <textarea class="col-12" id="exampleInputPassword1" [(ngModel)]="options"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="onCreateClicked()">Create</button>
+</div>
+

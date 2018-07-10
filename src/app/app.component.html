@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div  >
+    <div class="container">
+      <div class="row">
+        <create-poll (PollAdded)="onNewPollAdded($event)"></create-poll>
+      </div>
+      <div class="row border my-3"></div>
+      <div class="row">
+        <poll-list #pollList></poll-list>
+      </div>
+      <div class="row border my-3"></div>
+      <div class="row">
+        <view-poll></view-poll>
+      </div>
+    </div>
+  <!--<view-poll></view-poll>-->
+</div>

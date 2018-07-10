@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+    <h4>POLLS LIST:</h4>
+    <table class="table  table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">POLL TITLE</th>
+            <th scope="col">VIEW</th>
+            <th scope="col">REMOVE</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pollData of pollList" #item>
+                <td><div>{{pollData.pollName}}</div></td>
+                <td><div class="border"><i class="fas fa-arrow-right mx-auto"></i></div></td>
+                <td><div class="border"><i class="fa fa-times" aria-hidden="true"></i></div></td>
+            </tr>          
+      </tbody>
+    </table>
+</div>
+
