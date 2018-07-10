@@ -4,7 +4,7 @@
   "main":"server.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --open",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -29,6 +29,9 @@
 	"mongoose" : "~3.8.0",
 	"body-parser" : "~1.4.2",
 	"method-override" : "~2.0.2" 
+  },
+  "engines":{
+	"node":"8.11.3"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^6.0.3",
